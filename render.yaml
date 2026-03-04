@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: bragym-site
+    env: static
+    buildCommand: ""
+    staticPublishPath: ./site/public
