@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>BRA GYM | Somos Energía</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7dfa00",
+                        "background-light": "#f7f8f5",
+                        "background-dark": "#0F0F0F",
+                        "card-dark": "#1A1A1A",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .neon-glow:hover {
+            box-shadow: 0 0 15px rgba(125, 250, 0, 0.5);
+        }
+
+        .text-neon {
+            color: #7dfa00;
+        }
+
+        .border-neon {
+            border-color: #7dfa00;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 bg-background-dark/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary text-3xl">exercise</span>
+                <span class="text-2xl font-black tracking-tighter text-white">BRA GYM</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-bold uppercase tracking-widest text-white hover:text-primary transition-colors"
+                    href="#">Home</a>
+                <a class="text-sm font-bold uppercase tracking-widest text-white hover:text-primary transition-colors"
+                    href="#el-gym">El Gym</a>
+                <a class="text-sm font-bold uppercase tracking-widest text-white hover:text-primary transition-colors"
+                    href="#planes">Planes</a>
+                <a class="text-sm font-bold uppercase tracking-widest text-white hover:text-primary transition-colors"
+                    href="#contacto">Contacto</a>
+            </nav>
+            <a href="https://wa.me/59899973362?text=Hola%20Nacho%2C%20quiero%20reservar%20mi%20clase%20gratis%20en%20BRA%20GYM"
+                target="_blank" rel="noopener noreferrer"
+                class="bg-primary text-background-dark px-8 py-2 rounded-full font-black text-sm uppercase tracking-wider hover:scale-105 transition-transform neon-glow inline-block text-center">
+                Clase gratis
+            </a>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section
+        class="relative min-h-screen flex flex-col items-center justify-center pt-20 px-6 text-center overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-20 pointer-events-none"
+            data-alt="Dark urban industrial gym environment background">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-background-dark"></div>
+        </div>
+        <div class="relative z-10 max-w-5xl">
+            <h1 class="text-6xl md:text-9xl font-black leading-[0.9] tracking-tighter text-white mb-12">
+                SOMOS BARRIO, <br />
+                SOMOS ENERGÍA, <br />
+                SOMOS <span class="text-primary">BRA GYM</span>
+            </h1>
+            <div class="flex flex-col items-center gap-6">
+                <div class="flex flex-col items-center gap-2">
+                    <a href="https://wa.me/59899973362?text=Hola%20Nacho%2C%20quiero%20reservar%20mi%20clase%20gratis%20en%20BRA%20GYM"
+                        target="_blank" rel="noopener noreferrer"
+                        class="bg-primary text-background-dark px-12 py-6 rounded-full font-black text-xl uppercase tracking-widest hover:scale-105 transition-transform neon-glow inline-block text-center">
+                        Reservá tu clase gratis
+                    </a>
+                    <p class="text-sm text-slate-400">Primera clase sin costo. Cupos limitados por horario.</p>
+                </div>
+                <p class="text-slate-400 text-lg max-w-xl font-medium mt-4">
+                    Entrenamiento guiado para principiantes, para quienes quieren bajar de peso y para quienes quieren
+                    empezar a correr. Presencial u online.
+                </p>
+
+                <!-- Trust Bar -->
+                <div
+                    class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 mt-8 pt-8 border-t border-white/10 w-full">
+                    <div class="flex items-center gap-2 text-slate-300">
+                        <span class="text-primary text-xl leading-none">⭐</span>
+                        <span class="font-bold text-white">5.0</span> en Pase Libre
+                    </div>
+                    <div class="flex items-center gap-2 text-slate-300">
+                        <span class="material-symbols-outlined text-primary text-xl">groups</span>
+                        <span class="font-bold text-white">+55</span> alumnos activos
+                    </div>
+                    <div class="flex items-center gap-2 text-slate-300">
+                        <span class="material-symbols-outlined text-primary text-xl">location_on</span>
+                        Ubicados en <span class="font-bold text-white">Pocitos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- El Gym: Categories -->
+    <section id="el-gym" class="py-32 px-6 max-w-7xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-black text-white mb-16 tracking-tight text-center">Acá hay lugar para todos
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <!-- Beginner Card -->
+            <div
+                class="bg-card-dark p-10 rounded-2xl border border-white/5 hover:border-primary/50 transition-colors group">
+                <span
+                    class="material-symbols-outlined text-primary text-5xl mb-6 group-hover:scale-110 transition-transform">person_play</span>
+                <h3 class="text-2xl font-bold text-white mb-2">Principiantes</h3>
+                <p class="text-slate-400">Empezá tu camino con bases sólidas y técnica correcta.</p>
+            </div>
+            <!-- Weight Loss Card -->
+            <div
+                class="bg-card-dark p-10 rounded-2xl border border-white/5 hover:border-primary/50 transition-colors group">
+                <span
+                    class="material-symbols-outlined text-primary text-5xl mb-6 group-hover:scale-110 transition-transform">speed</span>
+                <h3 class="text-2xl font-bold text-white mb-2">Pérdida de peso</h3>
+                <p class="text-slate-400">Alcanzá tu peso ideal con rutinas metabólicas explosivas.</p>
+            </div>
+            <!-- Strength Card -->
+            <div
+                class="bg-card-dark p-10 rounded-2xl border border-white/5 hover:border-primary/50 transition-colors group">
+                <span
+                    class="material-symbols-outlined text-primary text-5xl mb-6 group-hover:scale-110 transition-transform">fitness_center</span>
+                <h3 class="text-2xl font-bold text-white mb-2">Fuerza</h3>
+                <p class="text-slate-400">Construí fuerza funcional.</p>
+            </div>
+            <!-- Runners Club Card -->
+            <div
+                class="bg-card-dark p-10 rounded-2xl border border-white/5 hover:border-primary/50 transition-colors group">
+                <span
+                    class="material-symbols-outlined text-primary text-5xl mb-6 group-hover:scale-110 transition-transform">directions_run</span>
+                <h3 class="text-2xl font-bold text-white mb-2">Branners Club</h3>
+                <p class="text-slate-400">Unite al Branners running club y sumale Kms a tu rutina</p>
+            </div>
+        </div>
+    </section>
+    <!-- Methodology -->
+    <section class="py-32 bg-primary/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-black text-white mb-20 tracking-tight text-center">No entrenás solo.
+                <span class="text-primary">Entrenás guiado.</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="border-l-4 border-primary pl-8">
+                    <span class="text-5xl font-black text-primary/30 mb-4 block">01</span>
+                    <h4 class="text-xl font-bold text-white mb-2">Diagnóstico</h4>
+                    <p class="text-slate-400">Evaluamos tu punto de partida físico y tus objetivos reales.</p>
+                </div>
+                <div class="border-l-4 border-primary pl-8">
+                    <span class="text-5xl font-black text-primary/30 mb-4 block">02</span>
+                    <h4 class="text-xl font-bold text-white mb-2">Plan Personal</h4>
+                    <p class="text-slate-400">Diseñamos la ruta específica que tu cuerpo necesita hoy.</p>
+                </div>
+                <div class="border-l-4 border-primary pl-8">
+                    <span class="text-5xl font-black text-primary/30 mb-4 block">03</span>
+                    <h4 class="text-xl font-bold text-white mb-2">Ejecución</h4>
+                    <p class="text-slate-400">Entrenás con nosotros, corrigiendo técnica en cada repetición.</p>
+                </div>
+                <div class="border-l-4 border-primary pl-8">
+                    <span class="text-5xl font-black text-primary/30 mb-4 block">04</span>
+                    <h4 class="text-xl font-bold text-white mb-2">Evolución</h4>
+                    <p class="text-slate-400">Medimos progresos mensuales para ajustar la carga y seguir creciendo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Trainer Bio -->
+    <section class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div class="bg-card-dark aspect-[4/5] rounded-3xl overflow-hidden relative"
+                data-alt="Portrait of head trainer Nacho in gym gear">
+                <img src="trainer.png" class="absolute inset-0 w-full h-full object-cover object-[75%_top]"
+                    alt="Nacho Trainer" />
+                <div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent z-10"></div>
+            </div>
+            <div>
+                <h2 class="text-4xl md:text-5xl font-black text-white mb-8 leading-tight">Tu entrenador, <br />no una
+                    pantalla.</h2>
+                <p class="text-xl text-slate-300 leading-relaxed mb-6">
+                    Soy Ignacio <span class="text-primary font-bold">Nacho</span> Ponce. En Bra Gym no creemos en
+                    las rutinas
+                    genéricas de papel. Entiendo el esfuerzo que implica venir antes o después del laburo y por eso mi
+                    compromiso es que cada minuto que pases acá valga la pena.
+                </p>
+                <p class="text-xl text-slate-300 leading-relaxed mb-10">
+                    Acá no sos un número de socio, sos parte de una comunidad que empuja hacia adelante. Te voy a
+                    exigir, pero te voy a cuidar.
+                </p>
+                <div class="flex items-center gap-4">
+                    <div class="h-px w-20 bg-primary"></div>
+                    <span class="text-primary font-bold uppercase tracking-widest">Profe y fundador de Bra Gym</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing -->
+    <section id="planes" class="py-32 bg-background-dark px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-black text-white mb-20 tracking-tight text-center">Elegí el plan que se
+                adapte a vos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                <!-- Presencial -->
+                <div
+                    class="bg-card-dark p-10 rounded-3xl border-t-4 border-primary/20 hover:border-primary transition-all flex flex-col h-full">
+                    <h3 class="text-2xl font-black text-white mb-4">Presencial</h3>
+                    <div class="text-3xl font-black text-white mb-4">Desde $2500 <span
+                            class="text-lg font-medium text-slate-500">/ mes</span></div>
+                    <ul class="space-y-4 mb-10 flex-grow pt-4">
+                        <li class="flex items-center gap-3 text-slate-300"><span
+                                class="material-symbols-outlined text-primary text-sm">check_circle</span> Acceso Full
+                            Gym</li>
+                        <li class="flex items-center gap-3 text-slate-300"><span
+                                class="material-symbols-outlined text-primary text-sm">check_circle</span> Rutinas
+                            personalizadas</li>
+                        <li class="flex items-center gap-3 text-slate-300"><span
+                                class="material-symbols-outlined text-primary text-sm">check_circle</span> Seguimiento
+                            nutricional</li>
+                    </ul>
+                    <a href="https://wa.me/59899973362?text=Hola%20Nacho%2C%20quiero%20reservar%20mi%20clase%20presencial%20gratis%20en%20BRA%20GYM"
+                        target="_blank" rel="noopener noreferrer"
+                        class="w-full border-2 border-primary text-primary py-4 rounded-xl font-bold hover:bg-primary hover:text-background-dark transition-colors block text-center">Reservá
+                        tu clase gratis</a>
+                </div>
+                <!-- Online (Featured) -->
+                <div
+                    class="bg-card-dark p-12 rounded-3xl border-t-8 border-primary relative transform md:scale-110 z-10 shadow-2xl flex flex-col h-full">
+                    <div
+                        class="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary text-background-dark px-6 py-1 rounded-full text-sm font-black uppercase tracking-tighter">
+                        Más elegido</div>
+                    <h3 class="text-3xl font-black text-white mb-4">Online</h3>
+                    <div class="text-3xl font-black text-white mb-4">Desde $2000 <span
+                            class="text-lg font-medium text-slate-500">/ mes</span></div>
+                    <ul class="space-y-4 mb-10 flex-grow pt-4">
+                        <li class="flex items-center gap-3 text-slate-300"><span
+                                class="material-symbols-outlined text-primary text-sm">check_circle</span> Entrená donde
+                            te quede más cómodo
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300"><span
+                                class="material-symbols-outlined text-primary text-sm">check_circle</span> Rutinas
+                            personalizadas</li>
+                        <li class="flex items-center gap-3 text-slate-300"><span
+                                class="material-symbols-outlined text-primary text-sm">check_circle</span> Seguimiento y
+                            ajustes personalizados</li>
+                    </ul>
+                    <a href="https://wa.me/59899973362?text=Hola%20Nacho%2C%20quiero%20reservar%20mi%20clase%20online%20gratis%20en%20BRA%20GYM"
+                        target="_blank" rel="noopener noreferrer"
+                        class="w-full bg-primary text-background-dark py-4 rounded-xl font-black hover:scale-105 transition-transform neon-glow block text-center">Reservá
+                        tu clase gratis</a>
+                </div>
+                <!-- Runners Club -->
+                <div
+                    class="bg-card-dark p-10 rounded-3xl border-t-4 border-primary/20 hover:border-primary transition-all flex flex-col h-full">
+                    <h3 class="text-2xl font-black text-white mb-4">Branners Club</h3>
+                    <div class="text-3xl font-black text-white mb-4">Desde $2000 <span
+                            class="text-lg font-medium text-slate-500">/ mes</span></div>
+                    <ul class="space-y-4 mb-10 flex-grow pt-4">
+                        <li class="flex items-center gap-3 text-slate-300"><span
+                                class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                            Salidas en grupo</li>
+                        <li class="flex items-center gap-3 text-slate-300"><span
+                                class="material-symbols-outlined text-primary text-sm">check_circle</span> Técnica de
+                            carrera</li>
+                        <li class="flex items-center gap-3 text-slate-300"><span
+                                class="material-symbols-outlined text-primary text-sm">check_circle</span> Progresión
+                            real</li>
+                    </ul>
+                    <a href="https://wa.me/59899973362?text=Hola%20Nacho%2C%20quiero%20unirme%20a%20Branners%20Club"
+                        target="_blank" rel="noopener noreferrer"
+                        class="w-full border-2 border-primary text-primary py-4 rounded-xl font-bold hover:bg-primary hover:text-background-dark transition-colors block text-center">Reservá
+                        tu clase gratis</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="py-32 px-6 max-w-7xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-black text-white mb-20 tracking-tight text-center">Lo que dice la comunidad
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="bg-card-dark p-8 rounded-2xl">
+                <div class="flex gap-1 mb-6">
+                    <span class="material-symbols-outlined text-primary fill-1">star</span>
+                    <span class="material-symbols-outlined text-primary fill-1">star</span>
+                    <span class="material-symbols-outlined text-primary fill-1">star</span>
+                    <span class="material-symbols-outlined text-primary fill-1">star</span>
+                    <span class="material-symbols-outlined text-primary fill-1">star</span>
+                </div>
+                <p class="text-lg italic text-slate-300 mb-8">"Si querés alguien que sepa, te cuide y te haga sentir
+                    como en casa. Es re contra por acá"</p>
+                <div class="flex items-center gap-4">
+                    <div class="size-12 rounded-full bg-slate-800 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-slate-400 text-2xl">person</span>
+                    </div>
+                    <span class="font-bold text-white">Kenzo. - Pase Libre</span>
+                </div>
+            </div>
+            <div class="bg-card-dark p-8 rounded-2xl">
+                <div class="flex gap-1 mb-6">
+                    <span class="material-symbols-outlined text-primary fill-1">star</span>
+                    <span class="material-symbols-outlined text-primary fill-1">star</span>
+                    <span class="material-symbols-outlined text-primary fill-1">star</span>
+                    <span class="material-symbols-outlined text-primary fill-1">star</span>
+                    <span class="material-symbols-outlined text-primary fill-1">star</span>
+                </div>
+                <p class="text-lg italic text-slate-300 mb-8">"Crack Nacho! Super personalizado y muy buen ambiente"</p>
+                <div class="flex items-center gap-4">
+                    <div class="size-12 rounded-full bg-slate-800 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-slate-400 text-2xl">person</span>
+                    </div>
+                    <span class="font-bold text-white">Diego. - Pase Libre</span>
+                </div>
+            </div>
+            <div class="bg-card-dark p-8 rounded-2xl">
+                <div class="flex gap-1 mb-6">
+                    <span class="material-symbols-outlined text-primary fill-1">star</span>
+                    <span class="material-symbols-outlined text-primary fill-1">star</span>
+                    <span class="material-symbols-outlined text-primary fill-1">star</span>
+                    <span class="material-symbols-outlined text-primary fill-1">star</span>
+                    <span class="material-symbols-outlined text-primary fill-1">star</span>
+                </div>
+                <p class="text-lg italic text-slate-300 mb-8">"El lugar está buenísimo, Nacho súper buena onda, desde el
+                    día uno te hace sentir parte del gym"</p>
+                <div class="flex items-center gap-4">
+                    <div class="size-12 rounded-full bg-slate-800 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-slate-400 text-2xl">person</span>
+                    </div>
+                    <span class="font-bold text-white">Estefania. - Pase Libre</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer / CTA -->
+    <footer id="contacto" class="bg-card-dark pt-32 pb-12 px-6">
+        <div class="max-w-7xl mx-auto text-center mb-24">
+            <h2 class="text-4xl md:text-7xl font-black text-white mb-6 tracking-tighter">EL MOMENTO PERFECTO NO EXISTE.
+                <br /> EL PRIMER PASO SÍ.
+            </h2>
+            <div class="flex flex-col items-center gap-2 mt-8">
+                <a href="https://wa.me/59899973362?text=Hola%20Nacho%2C%20quiero%20reservar%20mi%20clase%20gratis%20en%20BRA%20GYM"
+                    target="_blank" rel="noopener noreferrer"
+                    class="bg-primary text-background-dark px-16 py-8 rounded-full font-black text-3xl uppercase tracking-widest hover:scale-105 transition-transform neon-glow inline-block text-center">
+                    Reservá tu clase gratis
+                </a>
+                <p class="text-sm text-slate-400 mt-2">Primera clase sin costo. Cupos limitados por horario.</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mb-20 flex flex-col items-center">
+            <div class="bg-card-dark rounded-3xl h-[400px] w-full overflow-hidden relative border border-white/5 shadow-2xl"
+                data-alt="Dark stylized urban map showing gym location">
+
+                <!-- Interactive Map Frame with Dark Mode CSS Filters -->
+                <iframe
+                    src="https://maps.google.com/maps?q=Miguel%20Barreiro%20y%2026%20de%20Marzo,%20Montevideo&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="100%"
+                    style="border:0; filter: invert(95%) hue-rotate(180deg) grayscale(85%) contrast(120%);"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+                <!-- Vignette Edge Overlay -->
+                <div class="absolute inset-0 pointer-events-none"
+                    style="background: radial-gradient(circle, transparent 20%, #1A1A1A 100%); mix-blend-mode: multiply;">
+                </div>
+
+            </div>
+
+            <!-- Address Text -->
+            <p class="text-slate-400 font-medium text-lg mt-8 flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined text-primary text-2xl">pin_drop</span>
+                Miguel Barreiro esq. 26 de Marzo, Pocitos
+            </p>
+        </div>
+        <div class="max-w-7xl mx-auto pt-4 flex justify-center items-center gap-8">
+            <a href="https://www.instagram.com/bra_gym/" target="_blank" rel="noopener noreferrer"
+                class="transition-opacity" aria-label="Instagram">
+                <img src="ig.png" alt="Instagram"
+                    class="w-8 h-8 object-contain transition-all duration-300 invert mix-blend-screen opacity-60 hover:opacity-100 hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(124,252,0,0.8)]" />
+            </a>
+            <a href="https://wa.me/59899973362?text=Hola%20Nacho%2C%20quiero%20reservar%20mi%20clase%20gratis%20en%20BRA%20GYM"
+                target="_blank" rel="noopener noreferrer" class="transition-opacity" aria-label="WhatsApp">
+                <img src="wpp.png" alt="WhatsApp"
+                    class="w-8 h-8 object-contain transition-all duration-300 invert mix-blend-screen opacity-60 hover:opacity-100 hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(124,252,0,0.8)]" />
+            </a>
+        </div>
+    </footer>
+    <!-- Floating WhatsApp Button (Mobile) -->
+    <a href="https://wa.me/59899973362?text=Hola%20Nacho%2C%20quiero%20reservar%20mi%20clase%20gratis%20en%20BRA%20GYM"
+        target="_blank" rel="noopener noreferrer"
+        class="fixed bottom-6 right-6 z-50 md:hidden bg-primary p-3 rounded-full shadow-[0_0_15px_rgba(125,250,0,0.5)] hover:scale-110 transition-transform flex items-center justify-center">
+        <svg class="w-8 h-8 text-background-dark fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.663-2.06-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+        </svg>
+    </a>
+</body>
+
+</html>
